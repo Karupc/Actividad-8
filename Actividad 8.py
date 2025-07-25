@@ -16,5 +16,17 @@ while True:
                 print(f"{i}: {elemento}")
             indice = int(input("Ingrese el índice del elemento que desea modificar: "))
             elemento_nuevo = input("Ingrese el nuevo producto: ")
-            productos[indice] = elemento_nuevo}
+            productos[indice] = elemento_nuevo
             print("Elemento modificado")
+        case "3":
+            for i, elemento in enumerate(productos):
+                print(f"{i}: {elemento}")
+            indice = int(input("Ingrese el índice del elemento que desea eliminar: "))
+            productos.pop(indice)
+        case "4":
+            print("Lista de productos: ", productos)
+        case "5":
+            print("Programa terminado, muchas gracias por utilizarlo")
+            break
+        case _:
+            print("Opción no válida, vuelva a ingresar")
